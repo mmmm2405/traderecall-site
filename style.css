@@ -1,0 +1,26 @@
+:root { --navy: #0a1e32; --accent: #e2574c; --text: #1c2733; --sub: #5b6875; --bg: #f5f7fa; --card: #fff; --line: #dde3ea; }
+@media (prefers-color-scheme: dark) {
+  :root { --text: #e8edf2; --sub: #9aa8b5; --bg: #0a1e32; --card: #11293f; --line: #223d57; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif; line-height: 1.8; color: var(--text); background: var(--bg); }
+header.site { background: var(--navy); color: #fff; padding: 14px 20px; }
+header.site a { color: #fff; text-decoration: none; margin-right: 16px; font-size: 15px; }
+header.site a.brand { font-weight: 700; font-size: 18px; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 20px 48px; }
+h1 { font-size: 26px; margin: 8px 0 4px; }
+h2 { font-size: 19px; margin: 32px 0 8px; padding-left: 10px; border-left: 4px solid var(--accent); }
+p, li { font-size: 16px; }
+a { color: var(--accent); }
+.meta { color: var(--sub); font-size: 14px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 14px 0; }
+.hero { text-align: center; padding: 32px 0 8px; }
+.hero p.lead { font-size: 18px; color: var(--sub); }
+.hero img { width: 112px; height: 112px; border-radius: 26px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.grid .card { margin: 0; }
+.grid h3 { margin: 0 0 4px; font-size: 17px; }
+.grid p { margin: 0; font-size: 15px; color: var(--sub); }
+details.card summary { cursor: pointer; font-weight: 700; }
+footer { text-align: center; color: var(--sub); font-size: 14px; padding: 24px 20px 40px; }
+footer a { margin: 0 8px; }
